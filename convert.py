@@ -30,7 +30,7 @@ rules = [
     "[AutoProxy 0.2.9]",
     "! Title: Antifilter SmartProxy",
     "! Converted from Antifilter community edition",
-    *[f"||{domain}^" for domain in sorted(domains)],
+    *[f"||{domain}" for domain in sorted(domains)],
 ]
 
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
